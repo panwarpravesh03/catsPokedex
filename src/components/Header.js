@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 //import { Images } from 'react-native';
+import logo from '../images/pokedexImg.png'
 
-var time = new Date().getTime;
+var today = new Date();
+var time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 var greetMsg = '';
 if(time>'00:00' && time<'12:00') 
 	greetMsg='Good Morning';
@@ -13,7 +15,7 @@ else
 
 const Header = () => {
   return (
-		/* <!-- <Image source ={ require('../images/pokedexImg.png')} style={imageContainer}/> -->*/
+/*		 <img src ={logo} class="imageContainer"/> */
     <header>
 		  <h1>{greetMsg} Jack</h1>
 		  <h2> Welcome Back to your Cat Pokedex Dashboard</h2>

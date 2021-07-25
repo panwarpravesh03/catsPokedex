@@ -14,7 +14,7 @@ const Cat = ({
   const history = useHistory();
 
   return (
-    <Card style={{ width: '18rem' }} className="cat">
+    <Card style={{ width: '15rem' , padding: '10px'}} className="cat">
       <Card.Body>
         <Card.Title className="cat-title">{name}</Card.Title>
         <div className="cat-details">
